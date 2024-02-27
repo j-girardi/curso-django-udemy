@@ -273,3 +273,7 @@ h6 {
 .main-footer a:hover {
   filter: brightness(0.8);
 }
+
+.center {
+  text-align: center;
+}
