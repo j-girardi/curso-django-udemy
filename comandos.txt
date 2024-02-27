@@ -1,5 +1,6 @@
+tempo de curso: 4h + 6h + 6h
 
-
+-----------------------------------
 pytest:
 	pytest
 
@@ -22,3 +23,10 @@ pytest-watch:
 	ptw -- -k 'nome_do_teste'
 
 ------------------------------------
+usando coverage para cobertura de testes:
+
+	coverage run --omit='*/venv/*' -m pytest
+
+ou, se for criado especificado no .coveragerc os omits:
+
+	coverage run -m pytest
