@@ -22,6 +22,7 @@ class Recipe(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     is_published = models.BooleanField(default=False)
+
     cover = models.ImageField(
         upload_to='recipes/covers/%Y/%m/%d/', blank=True, default=''
         )
@@ -30,13 +31,13 @@ class Recipe(models.Model):
         default=None
     )
     author = models.ForeignKey(
-        User, on_delete=models.SET_NULL, null=True, blank=True, 
+        User, on_delete=models.SET_NULL, null=True, blank=True,
         default=None
     )
 
     def __str__(self) -> str:
         return self.title
-    
+
 # EDITED
 # title description slug
 # preparation_time preparation_time_unit

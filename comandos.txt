@@ -1,0 +1,24 @@
+
+
+pytest:
+	pytest
+
+unittest:
+	python3 manage.py test
+
+pytest-watch
+	ptw
+
+------------------------------------
+selecionar apenas um teste:
+
+pytest:
+	pytest -k 'nome_do_teste'
+
+unittest:
+	python3 manage.py test -k 'nome_do_teste'
+
+pytest-watch:
+	ptw -- -k 'nome_do_teste'
+
+------------------------------------
